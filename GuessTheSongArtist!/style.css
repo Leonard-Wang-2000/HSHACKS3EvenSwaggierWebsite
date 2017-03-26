@@ -1,0 +1,24 @@
+.easy {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border-color: black;
+  background-color: red;
+  font-size: 20px;
+  color: white;
+}
+.AmericanPop {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border-color: black;
+    background-color: red;
+    font-size: 20px;
+    color: white;
+}
+body{
+    background-image: url("http://www.planwallpaper.com/static/images/22fe4638-d675-47f8-9726-5f43e27bb084.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
