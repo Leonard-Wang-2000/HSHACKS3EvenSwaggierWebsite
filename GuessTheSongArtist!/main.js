@@ -1,8 +1,9 @@
 function sayThatWasEasy() {
-  var thatWasEasy = new Audio("Nightcore - Demons.mp3");
+  var thatWasEasy = new Audio("that_was_easy.mp3");
   thatWasEasy.play();
 }
-
+ var thatWasEasy = new Audio("that_was_easy.mp3");
+    thatWasEasy.play();
 
 $("#easy").on("click", sayThatWasEasy);
 $("#AmericanPop").on("click", sayThatWasEasy);

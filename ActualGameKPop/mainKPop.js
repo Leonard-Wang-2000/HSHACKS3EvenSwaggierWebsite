@@ -1,6 +1,6 @@
-
-function APink() {
-  var thatWasEasy = new Audio("Chu.mp3");
+/* global $ */
+function APink(stream) {
+  var thatWasEasy = document.getElementById("Chu");
   thatWasEasy.play();
 }
 function EXO() {
@@ -21,8 +21,8 @@ function BigBang() {
 }
 
 
-$("#Chu").on("click", APink);
-$("#Growl").on("click", EXO);
-$("#Just Right").on("click", GOT7);
-$("#TT").on("click", Twice);
-$("#Bang").on("click", BigBang);
+// $("#Chu").on("click", APink());
+// $("#Growl").on("click", EXO());
+// $("#Just Right").on("click", GOT7());
+// $("#TT").on("click", Twice());
+// $("#Bang").on("click", BigBang());

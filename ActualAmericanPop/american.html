@@ -17,8 +17,18 @@
         <h1>Guess the American Pop Song!</h1>
         <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
         <script src="mainAPop.js"></script>
+        <audio> id="Baby"
+             <source src="Baby.mp3"type='audio/mpeg'>
+        </audio>
+        
+        <button type = "audio/mpeg" onclick = "Baby()"> PlaySong1 </button>
+        <script>
+            function  Baby() {
+                var thatWasEasy = new Audio("Baby.mp3");
+                thatWasEasy.play();
+            }
+        </script>
 
-        <button id="Baby">PlaySong1</button>
         <button id="BlankSpace">PlaySong2</button>
         <button id="Photograph">PlaySong3</button>
         <button id="Roar">PlaySong4</button>
@@ -127,7 +137,7 @@
             
             <div>
                 <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
-                <label for="question-5-answers-D">D) ColdPlay </label>
+                <label for="question-5-answers-D">D) Coldplay </label>
             </div>
             
 
