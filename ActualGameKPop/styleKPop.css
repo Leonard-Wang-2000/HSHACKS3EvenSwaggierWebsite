@@ -1,12 +1,7 @@
-body {
-  background-image: url('test1jpg');
-  background-size:cover;
-  background-repeat: no-repeat;
-}
-
-form {
-    background-image: url('test1jpg');
+body{
+    background:url("https://i.ytimg.com/vi/J91awx5DHl0/maxresdefault.jpg");
+    background-repeat:no-repeat;
     background-size:cover;
-    background-repeat: no-repeat;
+    color: white;
+    
 }
-

@@ -1,5 +1,5 @@
 /* global $ */
-function sayThatWasEasy() {
+function sayThatWasEasy(stream) {
   var thatWasEasy = new Audio("Baby.mp3");
   thatWasEasy.play();
 }

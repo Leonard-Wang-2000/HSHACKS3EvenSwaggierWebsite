@@ -3,17 +3,25 @@
   <head>
     <title>K pop game</title>
     <link rel="stylesheet" href="styleKPop.css" type="text/css" />
-    <style>
-            body{
-                background:url("https://i.ytimg.com/vi/J91awx5DHl0/maxresdefault.jpg");
-                background-repeat:no-repeat;
-                background-size:cover;
-                color: white;
-                
-            }
-    </style>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="mainKPop.js"></script>
+    <script>
+        function APink() { 
+        	document.getElementById("mainFrameTwo").style.display="block"; 
+        }
+        function EXO() { 
+        	document.getElementById("mainFrameFour").style.display="block"; 
+        }
+        function BGA() { 
+        	document.getElementById("mainFrameSix").style.display="block"; 
+        }
+        function Twice() { 
+        	document.getElementById("mainFrameEight").style.display="block"; 
+        }
+        function BigBang() { 
+        	document.getElementById("mainFrameTen").style.display="block"; 
+        }
+    </script>
   </head>
   <body>
       <h1>Guess the K Pop Song!</h1>
@@ -31,30 +39,37 @@
     <form action="gradeKPop.php" method="post" id="quiz">
 
                 <h3> #1. What band is this?</h3>
-                
+                <div id="mainFrameTwo" style="display:none;">
+                <img src = "APink.png" width = "200" height = "200"/>
+                </div>
+                <input type="button" onclick="APink()">Hint?</button>
                 <div> 
                     <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                    <label for="question-1-answers-A">A) Monsta X </label>
+                    <label for="question-1-answers-A">A) APink </label>
                 </div>
                 
                 
                 <div>
                     <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                    <label for="question-1-answers-B">B) BTS </label>
+                    <label for="question-1-answers-B">B) Twice </label>
                 </div>
                 
                 <div>
                     <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                    <label for="question-1-answers-C">C) EXO </label>
+                    <label for="question-1-answers-C">C) Black Pink </label>
                 </div>
                 
                 <div>
                     <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                    <label for="question-1-answers-D">D) NCT 127 </label>
+                    <label for="question-1-answers-D">D) AOA </label>
                 </div>
             
 
                 <h3>  #2. What band is this?</h3>
+                <div id="mainFrameFour" style="display:none;">
+                <img src = "GOT7.png" width = "200" height = "200"/>
+                </div>
+                <input type="button" onclick="EXO()">Hint?</button>
                 
                 <div> 
                     <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
@@ -78,6 +93,11 @@
 
                 <h3>  #3. What band is this?</h3>
                 
+                <div id="mainFrameSix" style="display:none;">
+                <img src = "BGA.png" width = "200" height = "200"/>
+                </div>
+                <input type="button" onclick="BGA()">Hint?</button>
+                
                 <div>
                     <input type = "radio" name = "question-3-answers" if = "question-3-answers-A" value = "A"/>
                     <label for = "question-3-answers-A">A) BTS </label>
@@ -90,7 +110,7 @@
                 
                 <div>
                     <input type = "radio" name = "question-3-answers" if = "question-3-answers-C" value = "C"/>
-                    <label for = "question-3-answers-C">C) GOT7 </label>
+                    <label for = "question-3-answers-C">C) BGA </label>
                 </div>
                 
                 <div>
@@ -99,31 +119,39 @@
                 </div>
                 
                 <h3> #4. What band is this?</h3>
+                <div id="mainFrameEight" style="display:none;">
+                <img src = "Twice.png" width = "200" height = "200"/>
+                </div>
+                <input type="button" onclick="Twice()">Hint?</button>
                 
                 <div> 
                     <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
-                    <label for="question-4-answers-A">A) Monsta X </label>
+                    <label for="question-4-answers-A">A) SNSD </label>
                 </div>
                 
                 
                 <div>
                     <input type="radio" name="question-4-answers" id="question4-answers-B" value="B" />
-                    <label for="question-4-answers-B">B) BTS </label>
+                    <label for="question-4-answers-B">B) Black Pink </label>
                 </div>
                 
                 <div>
                     <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
-                    <label for="question-4-answers-C">C) EXO </label>
+                    <label for="question-4-answers-C">C) Girls Generation </label>
                 </div>
                 
                 <div>
                     <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
-                    <label for="question-4-answers-D">D) NCT 127 </label>
+                    <label for="question-4-answers-D">D) Twice </label>
                 </div>
             
 
 
                 <h3> #5. What band is this?</h3>
+                <div id="mainFrameTen" style="display:none;">
+                <img src = "BigBang.png" width = "200" height = "200"/>
+                </div>
+                <input type="button" onclick="BigBang()">Hint?</button>
                 
                 <div> 
                     <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
@@ -138,7 +166,7 @@
                 
                 <div>
                     <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
-                    <label for="question-5-answers-C">C) EXO </label>
+                    <label for="question-5-answers-C">C) BigBang </label>
                 </div>
                 
                 <div>

@@ -1,11 +1,13 @@
-body {
-  background-image: url('test1jpg');
+
+body{
+  background:url("http://metrouk2.files.wordpress.com/2012/12/article-1354383342755-16263c30000005dc-565586_636x499.jpg");
+  background-repeat:no-repeat;
   background-size:cover;
-  background-repeat: no-repeat;
+  color: white;
 }
 
-form {
-    background-image: url('test1jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
+#img1 {
+	float: right;
+	margin-left: 2em;
+	opacity: 0;
 }

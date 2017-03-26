@@ -3,15 +3,23 @@
     <head>
         <title>American pop game</title>
         <link rel="stylesheet" href="styleAPop.css" type="text/css" />
-        <style>
-            body{
-                background:url("http://metrouk2.files.wordpress.com/2012/12/article-1354383342755-16263c30000005dc-565586_636x499.jpg");
-                background-repeat:no-repeat;
-                background-size:cover;
-                color: white;
-                
-            }
-        </style>
+        <script>
+        function bieber() { 
+        	document.getElementById("mainFrameTwo").style.display="block"; 
+        }
+        function taylor() { 
+        	document.getElementById("mainFrameFour").style.display="block"; 
+        }
+        function katy() { 
+        	document.getElementById("mainFrameSix").style.display="block"; 
+        }
+        function ed() { 
+        	document.getElementById("mainFrameEight").style.display="block"; 
+        }
+        function coldplay() { 
+        	document.getElementById("mainFrameTen").style.display="block"; 
+        }
+        </script>
     </head>
     <body>
         <h1>Guess the American Pop Song!</h1>
@@ -38,7 +46,11 @@
         <button id="Viva" onClick="ColdPlay()">PlaySong5</button>
         <form action="gradeAPop.php" method="post" id="quiz">
             
-            <h3>1. What song is this?</h3>
+            <h3>1. Whose song is this?</h3>
+            <div id="mainFrameTwo" style="display:none;">
+            <img src = "beiber.png" width = "200" height = "200"/>
+            </div>
+            <input type="button" onclick="bieber()">Hint?</button>
             <div> 
                 <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
                 <label for="question-1-answers-A">A) Bruno Mars </label>
@@ -58,7 +70,12 @@
             </div>
             
 
-            <h3>2. What song is this?</h3>
+            <h3>2. Whose song is this?</h3>
+            <div id="mainFrameFour" style="display:none;">
+            <img src = "taylor.png" width = "200" height = "200"/>
+            </div>
+            <input type="button" onclick="taylor()">Hint?</button>
+            
             <div> 
                 <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
                 <label for="question-2-answers-A">A) Taylor Swift </label>
@@ -81,7 +98,12 @@
             </div>
         
 
-            <h3>3. What is this song?</h3>
+            <h3>3. Whose is this song?</h3>
+            <div id="mainFrameEight" style="display:none;">
+            <img src = "ed.png" width = "200" height = "200"/>
+            </div>
+            <input type="button" onclick="ed()">Hint?</button>
+            
             <div>
                 <input type = "radio" name = "question-3-answers" if = "question-3-answers-A" value = "A"/>
                 <label for = "question-3-answers-A">A) Bruno Mars </label>
@@ -102,7 +124,12 @@
                 <label for = "question-3-answers-D">D) Justin Bieber </label>
             </div>
             
-            <h3>4. What song is this?</h3>
+            <h3>4. Whose song is this?</h3>
+            <div id="mainFrameSix" style="display:none;">
+            <img src = "katy.png" width = "200" height = "200"/>
+            </div>
+            <input type="button" onclick="katy()">Hint?</button>
+            
             
             <div> 
                 <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
@@ -123,7 +150,12 @@
             </div>
             
 
-            <h3>5. What song is this?</h3>
+            <h3>5. Whose song is this?</h3>
+            <div id="mainFrameTen" style="display:none;">
+            <img src = "coldplay.png" width = "200" height = "200"/>
+            </div>
+            <input type="button" onclick="coldplay()">Hint?</button>
+            
             
             <div> 
                 <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
