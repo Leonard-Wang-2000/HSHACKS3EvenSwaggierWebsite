@@ -3,20 +3,20 @@ function APink(stream) {
   var thatWasEasy = document.getElementById("Chu");
   thatWasEasy.play();
 }
-function EXO() {
+function EXO(stream) {
   var thatWasEasy = new Audio("Growl.mp3");
   thatWasEasy.play();
 }
-function GOT7() {
-  var thatWasEasy = new Audio("Just Right.mp3");
+function BGA(stream) {
+  var thatWasEasy = new Audio("Bga.mp3");
   thatWasEasy.play();
 }
-function Twice() {
+function Twice(stream) {
   var thatWasEasy = new Audio("TT.mp3");
   thatWasEasy.play();
 }
-function BigBang() {
-  var thatWasEasy = new Audio("Bang.mp3");
+function BigBang(stream) {
+  var thatWasEasy = document.getElementById("love");
   thatWasEasy.play();
 }
 
